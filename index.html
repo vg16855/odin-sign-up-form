@@ -1,0 +1,95 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Skranji:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <title>Sign-Up Form</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    <div id="splash">
+        <div id="overlay">
+            <img id="logo" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png">
+            <div>ODIN</div>
+        </div>
+        <img id="splash-image" src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80">
+    </div>
+    <div id="content">
+        <div id="intro">
+            <p class="heading1">This is not a real online service! You know you need something like
+                this in your life to help you realize your deepest dreams.
+                <br>Sign up <em>now</em> to get started.
+            </p>
+            <p class="heading1">You <em>know</em> you want to.</p>
+        </div>
+        <form onsubmit="return checkPassword()" id="info" method="get" action="#">
+            <div id = form-content>
+                <p class="heading1">Let's do this!</p>
+                <div id="text-input-fields">
+                    <div class="col">
+                        <div class="fill">
+                            <div class="text-label" >FIRST NAME</div>
+                            <input type="text">
+                        </div>
+                        <div class="fill">
+                            <div class="text-label" required>EMAIL</div>
+                            <input type="text">
+                        </div>
+                        <div class="fill">
+                            <div class="text-label error" required>PASSWORD</div>
+                            <input type="password" id="pswd" class="pswd">
+                            <p id="message"></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="fill">
+                            <div class="text-label" >LAST NAME</div>
+                            <input type="text">
+                        </div>
+                        <div class="fill">
+                            <div class="text-label">PHONE NUMBER</div>
+                            <input type="text">
+                        </div>
+                        <div class="fill">
+                            <div class="text-label error" required>CONFIRM PASSWORD</div>
+                            <input type="password" id="cpswd" class="pswd">
+                        </div>            
+                    </div>
+                </div>
+            </div>
+            <button type="submit" value="submit">Create Account</button>
+        </form>
+        <div id="ending">
+            <p>Already have an account? <a href = "">Log in</a></p>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
